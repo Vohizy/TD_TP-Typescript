@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+.card{
+  width: 18rem;
+}
+.Text{
+  height: 100px;
+  width: 260px;
+}
+.card-text{
+  border: 1.5px solid rgb(59, 59, 59);
+  border-radius: 3px;
+}
+.form-group >.custom-select{
+  width: 120px;
+}

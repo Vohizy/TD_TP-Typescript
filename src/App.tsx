@@ -1,25 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import './css/bootstrap.css'
+import { Form } from './component/form';
+import { Card } from './component/card';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+<>
+<Form />
+
+<div className="d-flex justify-content-around">
+  <div className="row">
+    <Card Status='To Do' badge='card-title badge badge-primary text-wrap' />
+    <Card Status='Progresse' badge='card-title badge badge-secondary text-wrap' />
+    <Card Status='Done' badge='card-title badge badge-success text-wrap' />
+  </div>
+</div>
+</>
   );
 }
 
